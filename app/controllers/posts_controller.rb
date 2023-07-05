@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-  end
+    @posts = Post.all  # すべてのレコードを@postsに代入
   end
 
   def new
